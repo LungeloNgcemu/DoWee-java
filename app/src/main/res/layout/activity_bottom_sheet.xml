@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    tools:context=".bottom_sheet">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        tools:context=".bottom_sheet">
+
+
+    <androidx.cardview.widget.CardView
+        cardCornerRadius="0dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/transparent"
+        android:layout_height="800dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <EditText
+                android:id="@+id/tittleEntry"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Enter Title"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.935"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.185" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="129dp"
+                android:layout_height="50dp"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.192" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:id="@+id/textView3"
+                android:layout_width="129dp"
+                android:layout_height="50dp"
+                android:text="Note"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.369" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/create"
+                android:layout_width="295dp"
+                android:layout_height="56dp"
+                android:backgroundTint="#7C4DFF"
+                android:foregroundTint="#E040FB"
+                android:text="Create"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.715" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                android:id="@+id/textView4"
+                android:layout_width="129dp"
+                android:layout_height="50dp"
+                android:text="Date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.552" />
+
+            <EditText
+                android:id="@+id/dateEntry"
+                android:layout_width="226dp"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Enter Date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.556" />
+
+            <EditText
+                android:id="@+id/noteEntry"
+                android:layout_width="224dp"
+                android:layout_height="124dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Enter Note"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.928"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.351" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
